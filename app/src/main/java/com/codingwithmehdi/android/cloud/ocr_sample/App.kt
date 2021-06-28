@@ -7,7 +7,7 @@ class App: Application() {
 
     override fun onCreate() {
         super.onCreate()
-        TextRecognition.initialize("API_KEY")
+        TextRecognition.initialize(BuildConfig.OCR_CLOUD_API_KEY)
     }
 
 }

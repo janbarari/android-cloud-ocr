@@ -11,14 +11,14 @@ android {
 
     defaultConfig {
         applicationId = "com.codingwithmehdi.android.cloud.ocr"
-        minSdkVersion(21)
+        minSdkVersion(23)
         targetSdkVersion(30)
         versionCode(1)
         versionName("1.0.0")
 
         val properties: Properties = Properties()
         properties.load(project.rootProject.file("local.properties").inputStream())
-        buildConfigField("String", "OCR_CLOUD_API_KEY", properties.getProperty("ocr.space.apikey"))
+        buildConfigField("String", "OCR_CLOUD_API_KEY", "\"${properties.getProperty("ocr.space.apikey")}\"")
     }
 
     compileOptions {
