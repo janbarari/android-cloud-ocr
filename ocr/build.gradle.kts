@@ -44,6 +44,10 @@ dependencies {
     //endregion
 
     //region Image Compressor
-    implementation("id.zelory:compressor:3.0.1")
+    api("id.zelory:compressor:3.0.1")
     //endregion
+}
+
+repositories {
+    mavenCentral()
 }
