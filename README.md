@@ -1,6 +1,7 @@
 # Android Cloud OCR: A lightweight tool to extract the image text
 [![](https://jitpack.io/v/janbarari/android-cloud-ocr.svg)](https://jitpack.io/#janbarari/android-cloud-ocr)
 
+
 Do you want to get the content the text of an image with a simple and fast way? This is your magic
 
 Hi Devs,
