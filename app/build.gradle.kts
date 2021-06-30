@@ -10,7 +10,7 @@ android {
     buildToolsVersion("30.0.3")
 
     defaultConfig {
-        applicationId = "com.codingwithmehdi.android.cloud.ocr"
+        applicationId = "com.codingwithmehdi.android.cloud.ocr_sample"
         minSdkVersion(23)
         targetSdkVersion(30)
         versionCode(1)

@@ -27,18 +27,20 @@ class MainActivity : AppCompatActivity() {
 
                     val image = findViewById<ImageView>(R.id.image)
                     image.setImageURI(uri)
-                    TextRecognition.fromFile(file, object : TextRecognition.Callback {
-                        override fun success(response: String) {
-                            val contentLabel = findViewById<TextView>(R.id.content_label)
-                            contentLabel.text = response
-                        }
+                    TextRecognition.compressFile(this, file) {
+                        TextRecognition.fromFile(it, object : TextRecognition.Callback {
+                            override fun success(response: String) {
+                                val contentLabel = findViewById<TextView>(R.id.content_label)
+                                contentLabel.text = response
+                            }
 
-                        override fun failure(e: Throwable) {
-                            val contentLabel = findViewById<TextView>(R.id.content_label)
-                            contentLabel.text = e.toString()
-                        }
+                            override fun failure(e: Throwable) {
+                                val contentLabel = findViewById<TextView>(R.id.content_label)
+                                contentLabel.text = e.toString()
+                            }
 
-                    })
+                        })
+                    }
                 } catch (e: Exception) {
                     val contentLabel = findViewById<TextView>(R.id.content_label)
                     contentLabel.text = e.toString()

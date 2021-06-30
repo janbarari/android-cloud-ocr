@@ -11,28 +11,29 @@
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight=".7"
         tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#5EDC6B"
-        android:gravity="center"
+        android:layout_weight="1.3"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/content_label"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="30dp"
             android:fontFamily="sans-serif"
-            android:gravity="center"
+            android:gravity="left"
+            android:justificationMode="inter_word"
             android:lineSpacingExtra="4dp"
             android:text="Please pick an image and make sure you have internet connection"
-            android:textColor="@color/white"
-            android:textFontWeight="400"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
             android:textSize="16sp" />
 
         <Button
