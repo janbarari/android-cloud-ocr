@@ -28,6 +28,33 @@ dependencies {
     implementation 'com.github.janbarari:android-cloud-ocr:v1.0.0-alpha'
 }
 ```
+## How to use
+Put this code inside your Application class
+```kotlin
+TextRecognition.initialize(BuildConfig.OCR_CLOUD_API_KEY)
+```
+Then use the below sample code
+```kotlin
+val imageFile: File = //Your image file
+TextRecognition.fromFile(imageFile, object : TextRecognition.Callback {
+    override fun success(response: String) {
+        //do stuff
+    }
+
+    override fun failure(e: Throwable) {
+        //do stuff
+    }
+
+})
+```
+Because this API limited the file size to be less than 1MB for free account and 3MB for premium account I put a easy function to you to compress the file size and gives you the compressed file fast
+```kotlin
+val context: Context = //The context
+val imageFile: File = //Your image file
+TextRecognition.compressFile(context, imageFile) { compressedFile ->
+    //do the previous step here
+}
+```
 
 ## Sponsor
   ### If you like and use it, please tap the Star(⭐️) button at the above.  
