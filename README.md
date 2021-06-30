@@ -3,7 +3,7 @@
 [![License](http://img.shields.io/badge/License-Apache_v2.0-green.svg?style=flat)](https://github.com/janbarari/kevent)
 
 
-Do you want to get the content the text of an image with a simple and fast way? This is your magic
+Do you want to get text content of an image using simple and fast approach? This is all your need
 
 Hi Devs,
 This library based on https://ocr.space API to get text inside the image, 
