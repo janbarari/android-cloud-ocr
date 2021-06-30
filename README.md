@@ -12,9 +12,9 @@ to get premium plan. It's really worth.
 
 Benefits
 --------
-- Fast and Accurate
+- Fast and accurate
 - Easy to use
-- Cheap pricing plan
+- Good pricing plan
 - No need to download module like Google ML kit
 
 ## Example Video
