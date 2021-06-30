@@ -1,2 +1,2 @@
-rootProject.name = "android-cloud-ocr"
-include(":app", ":ocr")
+include(":app")
+include(":ocr")

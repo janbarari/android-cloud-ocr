@@ -6,3 +6,5 @@ The speed is very good and the accuracy and detection is brilliant.
 try to clone this repository, put your API_KEY to your local.properties file 
 and run the app.
 
+## Example Video
+![](sample.gif)
