@@ -1,5 +1,6 @@
 # Android Cloud OCR: A lightweight tool to extract the image text
 [![](https://jitpack.io/v/janbarari/android-cloud-ocr.svg)](https://jitpack.io/#janbarari/android-cloud-ocr)
+[![License](http://img.shields.io/badge/License-Apache_v2.0-green.svg?style=flat)](https://github.com/janbarari/kevent)
 
 
 Do you want to get the content the text of an image with a simple and fast way? This is your magic
@@ -9,10 +10,17 @@ This library based on https://ocr.space API to get text inside the image,
 The api is not free but they have free plan to cover 25,000 requests/month. But I highly recommend 
 to get premium plan. It's really worth.
 
+Benefits
+--------
+- Fast and Accurate
+- Easy to use
+- Cheap pricing plan
+- No need to download module like Google ML kit
+
 ## Example Video
 ![](sample.gif)
 
-## Setup
+## Installation
 First of all you need to get your own API_KEY from https://ocr.space and put it into your project local.properties file like below:
 ```groovy
 ocr.space.apikey=ABCDEFGHIJK
@@ -29,7 +37,7 @@ dependencies {
     implementation 'com.github.janbarari:android-cloud-ocr:v1.0.0-alpha'
 }
 ```
-## How to use
+## Jump in code
 Put this code inside your Application class or call it before make any process
 ```kotlin
 TextRecognition.initialize(BuildConfig.OCR_CLOUD_API_KEY)
@@ -56,6 +64,7 @@ TextRecognition.compressFile(context, imageFile) { compressedFile ->
     //do the previous step here
 }
 ```
+### I dedicate it to my lovely Negar❤️
 
 ## Sponsor
   ### If you like and use it, please tap the Star(⭐️) button at the above.  
