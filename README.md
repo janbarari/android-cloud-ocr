@@ -1,22 +1,21 @@
 # Android Cloud OCR: A lightweight tool to extract the image text
 [![](https://jitpack.io/v/janbarari/android-cloud-ocr.svg)](https://jitpack.io/#janbarari/android-cloud-ocr)
+Do you want to get the content the text of an image with a simple and fast way? This is your magic
 
 Hi Devs,
 This library based on https://ocr.space API to get text inside the image, 
-The api is not free but they have free plan to cover 25,000 request/month. 
-The speed is very good and the accuracy and detection is brilliant.
-try to clone this repository, put your API_KEY to your local.properties file 
-and run the app.
+The api is not free but they have free plan to cover 25,000 requests/month. But I highly recommend 
+to get premium plan. It's really worth.
 
 ## Example Video
 ![](sample.gif)
 
 ## Setup
-First of all you need to get your own API_KEY from https://ocr.space abd put it into your project local.properties file like below:
+First of all you need to get your own API_KEY from https://ocr.space and put it into your project local.properties file like below:
 ```groovy
 ocr.space.apikey=ABCDEFGHIJK
 ```
-And finally add the below dependency configurations
+And then add the below dependency configurations into your project
 ```kotlin
 allprojects {
     repositories {
@@ -29,11 +28,11 @@ dependencies {
 }
 ```
 ## How to use
-Put this code inside your Application class
+Put this code inside your Application class or call it before make any process
 ```kotlin
 TextRecognition.initialize(BuildConfig.OCR_CLOUD_API_KEY)
 ```
-Then use the below sample code
+Use the below sample to see how it's easy
 ```kotlin
 val imageFile: File = //Your image file
 TextRecognition.fromFile(imageFile, object : TextRecognition.Callback {
@@ -47,7 +46,7 @@ TextRecognition.fromFile(imageFile, object : TextRecognition.Callback {
 
 })
 ```
-Because this API limited the file size to be less than 1MB for free account and 3MB for premium account I put a easy function to you to compress the file size and gives you the compressed file fast
+Because the API limited the image file size to be less than 1MB for free account and 3MB for premium account I put an easy function to you to compress the file size and gives you the compressed file fast.
 ```kotlin
 val context: Context = //The context
 val imageFile: File = //Your image file
