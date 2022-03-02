@@ -89,4 +89,3 @@ TextRecognition.compressFile(context, imageFile) { compressedFile ->
     See the License for the specific language governing permissions and
     limitations under the License.
     
-### I dedicate it to my lovely Negar❤️
